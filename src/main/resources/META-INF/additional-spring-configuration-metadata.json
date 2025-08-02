@@ -1,0 +1,33 @@
+{
+  "properties": [
+    {
+      "name": "rabbitmq.exchange",
+      "type": "java.lang.String",
+      "description": "Description for rabbitmq.exchange."
+    },
+    {
+      "name": "rabbitmq.queue",
+      "type": "java.lang.String",
+      "description": "Description for rabbitmq.queue."
+    },
+    {
+      "name": "rabbitmq.routing-key",
+      "type": "java.lang.String",
+      "description": "Description for rabbitmq.routing-key."
+    },
+    {
+      "name": "rabbitmq.audit.exchange",
+      "type": "java.lang.String",
+      "description": "Description for rabbitmq.audit.exchange."
+    },
+    {
+      "name": "rabbitmq.audit.queue",
+      "type": "java.lang.String",
+      "description": "Description for rabbitmq.audit.queue."
+    },
+    {
+      "name": "rabbitmq.audit.routing-key",
+      "type": "java.lang.String",
+      "description": "Description for rabbitmq.audit.routing-key."
+    }
+  ] }

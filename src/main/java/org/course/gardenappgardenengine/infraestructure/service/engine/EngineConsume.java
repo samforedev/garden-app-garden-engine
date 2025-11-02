@@ -1,6 +1,7 @@
 package org.course.gardenappgardenengine.infraestructure.service.engine;
 
 import lombok.RequiredArgsConstructor;
+import org.apache.logging.log4j.message.Message;
 import org.course.gardenappgardenengine.application.engine.IEngineConsume;
 import org.course.gardenappgardenengine.application.engine.IEntityAssignmentHandler;
 import org.course.gardenappgardenengine.domain.models.engine.EngineProcess;
@@ -9,6 +10,7 @@ import org.course.gardenappgardenengine.infraestructure.service.handler.Assignme
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
+import java.nio.channels.Channel;
 import java.util.UUID;
 
 @Component
@@ -31,4 +33,10 @@ public class EngineConsume implements IEngineConsume {
 
         handler.process(process.getProcessType(), process.getDataRecords(), process);
     }
+
+
+    private void handleException(Message message, Channel channel, Message dataMessage, Exception ex) {
+
+    }
+
 }

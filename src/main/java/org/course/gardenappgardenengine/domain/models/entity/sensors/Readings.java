@@ -19,4 +19,6 @@ public class Readings extends BaseEntity {
     private String gardenId;
     private List<SensorData> sensors;
     private Instant timestamp;
+    private boolean rele_estado;
+    private String modo;
 }

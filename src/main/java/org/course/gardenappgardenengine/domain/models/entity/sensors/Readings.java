@@ -16,7 +16,7 @@ import java.util.List;
 @EqualsAndHashCode(callSuper = true)
 @Document(collection = "readings")
 public class Readings extends BaseEntity {
-    private String gardenId;
+    private String gardenCode;
     private List<SensorData> sensors;
     private Instant timestamp;
     private boolean rele_estado;

@@ -7,5 +7,5 @@ import java.util.List;
 import java.util.UUID;
 
 public interface ISensorReadingRepository extends MongoRepository<Readings, UUID> {
-    List<Readings> findAllByGardenId(String gardenId);
+    List<Readings> findAllByGardenCode(String gardenCode);
 }

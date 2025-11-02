@@ -38,7 +38,7 @@ public class SensorService {
     }
 
     private void calculateReadingsByGardenCode(String gardenCode) {
-        List<Readings> readings = sensorReadingRepository.findAllByGardenId(gardenCode);
+        List<Readings> readings = sensorReadingRepository.findAllByGardenCode(gardenCode);
         if (readings.isEmpty()) return;
 
         Map<String, List<Double>> groupedValues = readings.stream()
